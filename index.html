@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIM Persemaian Tanaman Hutan</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+  <div class="brand"><div class="brand-icon">🌿</div><div><strong>SIM Persemaian</strong><small>Tanaman Hutan</small></div></div>
+  <div><div class="nav-label">Menu utama</div><nav class="nav" id="nav">
+    <button class="active" data-page="dashboard"><span>▦</span>Dashboard</button>
+    <button data-page="ruang"><span>▤</span>Data Ruang</button>
+    <button data-page="bibit"><span>🌱</span>Isi Ruang & Bibit</button>
+    <button data-page="inventaris"><span>▧</span>Inventaris</button>
+    <button data-page="petugas"><span>♙</span>Penanggung Jawab</button>
+    <button data-page="lingkungan"><span>☀</span>Faktor Eksternal</button>
+    <button data-page="laporan"><span>▥</span>Laporan</button>
+  </nav></div>
+  <div class="side-note"><b>🌳 Pengelolaan terpadu</b>Data ruang, bibit, petugas, inventaris, dan lingkungan dalam satu sistem informasi.</div>
+</aside>
+<main class="main">
+<header class="topbar"><div style="display:flex;align-items:center;gap:12px"><button class="mobile-menu" id="menuToggle">☰</button><div><div class="crumb">SISTEM INFORMASI MANAJEMEN / <span id="crumb">DASHBOARD</span></div><h2 id="topTitle">Dashboard Persemaian</h2></div></div><div class="user-chip"><div class="avatar">SP</div><span><b>Administrator</b><br><span style="color:var(--muted)">Pengelola sistem</span></span></div></header>
+<div class="content" id="content"></div>
+<div class="footer">SIM Persemaian Tanaman Hutan · Prototipe untuk pembelajaran · Data contoh dapat diubah</div>
+</main>
+</div>
+<div class="modal-backdrop" id="modalBackdrop"><div class="modal"><div class="modal-head"><h3 id="modalTitle">Tambah Data</h3><button class="close" id="closeModal" aria-label="Tutup">×</button></div><form id="dataForm"><div class="form-grid" id="formFields"></div><div class="form-actions"><button type="button" class="btn outline" id="cancelModal">Batal</button><button type="submit" class="btn">Simpan Data</button></div></form></div></div>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+
+</body>
+</html>
